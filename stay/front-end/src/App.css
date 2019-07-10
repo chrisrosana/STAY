@@ -1,0 +1,350 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+:root{
+  --maindark: #232528;
+ } 
+
+.body{
+  /*background-color: lightgrey;*/
+  color:black;
+  font-family:sans-serif; 
+  font-size:16px;
+  font-weight:normal, sans-serif;
+  line-height:1.5em;
+  margin:0; 
+}
+
+.App {
+  text-align: center;
+
+}
+
+
+.footer{
+  background:#333;
+  color:#fff;
+  text-align: center;
+  padding: 20px;
+}
+
+#navbar{
+  padding-left: 8%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: black;
+  /*color: white;*/
+}
+
+#navbar ul{
+  padding:0;
+  list-style:none;
+}
+
+#navbar li{
+  display: inline-flex;
+}
+
+
+#navbar a{
+  text-decoration: none; 
+  font-size:20px;
+  padding-right: 20px;
+  color: white;
+}
+
+#navbar a:hover {
+  color: #064579;
+}
+
+
+div {
+    display: block;
+}
+
+input[type=email], input[type=password],input[type=text], textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+.submit-btn{
+width: 100%;
+}
+
+
+.search-box{
+  width: 50%;
+  box-sizing: border-box;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.5s ease-in-out;
+}
+
+.search-box:focus {
+  width: 100%;
+}
+
+.categories{
+  box-sizing: border-box;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+}
+
+
+.title{
+  text-align: center;
+  font-size: 30px;
+  color: orange;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+
+
+.modals {
+  /* display: block; */
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  /*max-width: 500px;*/
+  height: 100%; 
+  /*max-height: 500px;*/
+  overflow: auto;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 60px;
+}
+
+
+.modal-content {
+  width: 60% !IMPORTANT;
+  background-color: #fefefe ;
+  margin: 5% auto 15% auto ; 
+  border: 1px solid #888 ;
+}
+
+.modal-content2 {
+  width: 80% !IMPORTANT;
+  background-color: #fefefe ;
+  margin: 5% auto 15% auto ; 
+  border: 1px solid #888 ;
+}
+
+
+/* The Close Button (x) */
+.closes {
+  color: #aaaaaa;
+  /* color: #000; */
+  float: right;
+  top: 0;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.closes:hover,
+.closes:focus {
+  color: red;
+  cursor: pointer;
+}
+
+
+/*
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}*/
+
+.container2{
+  padding: 14px;
+}
+
+
+
+
+/*sidebar for the left menu*/
+.sidebar{
+  padding: 20px;
+  background-color: grey;/* #eee*/
+  color:white;
+  /*box-sizing:border-box;*/
+  height: 350px;
+  position: relative;
+    overflow-y: scroll;
+  overflow-x: hidden;
+  /*z-index: 1;*/
+  cursor: pointer;
+    width: 95%;
+}
+
+.fullscreen{
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    height:100%;
+    width:100%;
+}
+
+
+
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+
+.container{
+  width: 95%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+}
+
+
+.main-block{
+  float: right;
+  padding: 20px;
+  box-sizing:border-box;
+  background-color: white;
+  -ms-flex: 0 0 19%;
+    flex: 0 0 19%;
+    width: 80%;
+
+  /*position: relative;*/
+}
+
+
+
+.post-container {
+  /*max-width: 600px;*/
+  width:600px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.postcontainer textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 400px;
+}
+
+
+#map {
+  height: 100%;
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
