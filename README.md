@@ -1,4 +1,7 @@
-# STAY
+# STAY Rental Web App
+
+This is the final project for our CSC_648 Software Engineering class. In this class, we practiced the software development cycle to create and work on a rental website application.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
